@@ -1,0 +1,232 @@
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+}
+
+.title {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.card {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 0 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    font-size: 1em;
+}
+
+.formula {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+.controls label {
+    margin-right: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+}    
+
+
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2em;
+    }
+
+    .description {
+        font-size: 1em;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 90%;
+        padding: 20px;
+        margin: 10px 0;
+        font-size: 0.95em;
+    }
+
+    .formula {
+        font-size: 1.2em;
+    }
+
+    .button {
+        padding: 8px 16px;
+        font-size: 1em;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.8em;
+    }
+
+    .description {
+        font-size: 0.9em;
+    }
+
+    .card {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+
+    .formula {
+        font-size: 1em;
+    }
+
+    .button {
+        padding: 8px 14px;
+        font-size: 0.9em;
+    }
+}
+
+
+/* Versão otimizada para dispositivos móveis */
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9em;
+        padding: 0 10px;
+        line-height: 1.4;
+        color: #333;
+        background-color: #f5f5f5;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 10px auto;
+        padding: 15px;
+        box-shadow: none;
+        background-color: white;
+    }
+
+    .title {
+        font-size: 1.6em;
+        margin-bottom: 15px;
+    }
+
+    .description {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        font-size: 0.95em;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    .formula {
+        font-size: 1em;
+        margin: 10px 0;
+    }
+
+    .video-container {
+        margin: 15px 0;
+    }
+
+    .controls {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .controls label {
+        margin-bottom: 5px;
+        font-size: 0.9em;
+    }
+
+    .button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 1em;
+        margin: 10px 0;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .button:hover {
+        background-color: #555;
+    }
+}
